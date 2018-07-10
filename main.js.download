@@ -1,0 +1,14 @@
+$(document).ready(function() {
+
+	$('.profilethumb').click(function(e){
+	 e.preventDefault();
+    $("#largepicframe").attr('src',$(this).attr('src').replace('th_',''));
+    });
+
+	$(".scrolltoiframe").click(function(e) {
+		e.preventDefault();
+   	$('html, body').animate({
+      scrollTop: 0
+    }, 2000);
+   });
+});
